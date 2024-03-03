@@ -34,10 +34,10 @@ I(\theta)={\rm Var}[S(\boldsymbol X;\theta)]\tag{II}</script><p>根据式 $(\tex
 <script type="math/tex; mode=display">
 \sum_{i=1}^n \int f(X_i;\theta)\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\mathrm dX_i=0</script><p>对 $\theta$ 求导得到</p>
 <script type="math/tex; mode=display">
-\sum_{i=1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\frac{\partial \ln f(X_i;\theta)}{\partial \theta}+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial \theta^2}\mathrm dX_i=0\\
-\sum_{i=1}^n\int f(X_i;\theta)\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)^2+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\mathrm dX_i=0\\
-\sum_{i=1}^n {\rm Var}\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)+\sum_{i=1}^n\mathbb E\left[\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0\\
-{\rm Var}\left(\sum_{i=1}^n\frac{\partial\ln f(X_i;\theta)}{\partial \theta}\right)+\mathbb E\left[\sum_{i=1}^n\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0\\
+\sum_{i=1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\frac{\partial \ln f(X_i;\theta)}{\partial \theta}+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial \theta^2}\mathrm dX_i=0</script><script type="math/tex; mode=display">
+\sum_{i=1}^n\int f(X_i;\theta)\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)^2+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\mathrm dX_i=0</script><script type="math/tex; mode=display">
+\sum_{i=1}^n {\rm Var}\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)+\sum_{i=1}^n\mathbb E\left[\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0</script><script type="math/tex; mode=display">
+{\rm Var}\left(\sum_{i=1}^n\frac{\partial\ln f(X_i;\theta)}{\partial \theta}\right)+\mathbb E\left[\sum_{i=1}^n\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0</script><script type="math/tex; mode=display">
 {\rm Var}(S(\theta;\boldsymbol X))+\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial\theta^2}\right]=0</script><p>则</p>
 <script type="math/tex; mode=display">
 {\rm Var}(S(\theta;\boldsymbol X)=-\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial \theta^2}\right]</script><p>则</p>

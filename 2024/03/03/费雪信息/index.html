@@ -28,7 +28,7 @@
 <meta property="og:description" content="费雪信息维度 In mathematical statistics, the Fisher information (sometimes simply called information) is a way of measuring the amount of information that an observable random variable X carries about an un">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-03T09:24:09.571Z">
-<meta property="article:modified_time" content="2024-03-03T09:26:36.862Z">
+<meta property="article:modified_time" content="2024-03-03T09:36:19.005Z">
 <meta property="article:author" content="雪域与良田">
 <meta name="twitter:card" content="summary">
 
@@ -208,7 +208,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-03-03 17:24:09 / 修改时间：17:26:36" itemprop="dateCreated datePublished" datetime="2024-03-03T17:24:09+08:00">2024-03-03</time>
+              <time title="创建时间：2024-03-03 17:24:09 / 修改时间：17:36:19" itemprop="dateCreated datePublished" datetime="2024-03-03T17:24:09+08:00">2024-03-03</time>
             </span>
 
           
@@ -260,10 +260,10 @@ I(\theta)={\rm Var}[S(\boldsymbol X;\theta)]\tag{II}</script><p>根据式 $(\tex
 <script type="math/tex; mode=display">
 \sum_{i=1}^n \int f(X_i;\theta)\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\mathrm dX_i=0</script><p>对 $\theta$ 求导得到</p>
 <script type="math/tex; mode=display">
-\sum_{i=1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\frac{\partial \ln f(X_i;\theta)}{\partial \theta}+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial \theta^2}\mathrm dX_i=0\\
-\sum_{i=1}^n\int f(X_i;\theta)\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)^2+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\mathrm dX_i=0\\
-\sum_{i=1}^n {\rm Var}\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)+\sum_{i=1}^n\mathbb E\left[\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0\\
-{\rm Var}\left(\sum_{i=1}^n\frac{\partial\ln f(X_i;\theta)}{\partial \theta}\right)+\mathbb E\left[\sum_{i=1}^n\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0\\
+\sum_{i=1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\frac{\partial \ln f(X_i;\theta)}{\partial \theta}+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial \theta^2}\mathrm dX_i=0</script><script type="math/tex; mode=display">
+\sum_{i=1}^n\int f(X_i;\theta)\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)^2+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\mathrm dX_i=0</script><script type="math/tex; mode=display">
+\sum_{i=1}^n {\rm Var}\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)+\sum_{i=1}^n\mathbb E\left[\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0</script><script type="math/tex; mode=display">
+{\rm Var}\left(\sum_{i=1}^n\frac{\partial\ln f(X_i;\theta)}{\partial \theta}\right)+\mathbb E\left[\sum_{i=1}^n\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] =0</script><script type="math/tex; mode=display">
 {\rm Var}(S(\theta;\boldsymbol X))+\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial\theta^2}\right]=0</script><p>则</p>
 <script type="math/tex; mode=display">
 {\rm Var}(S(\theta;\boldsymbol X)=-\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial \theta^2}\right]</script><p>则</p>
@@ -522,6 +522,61 @@ F=-\mathbb E_{p(\boldsymbol X;\boldsymbol\theta)}\left[\operatorname H_{\log p(\
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
