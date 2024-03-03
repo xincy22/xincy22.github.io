@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #bdf05c;
+  background: #4bc124;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1541,6 +1541,9 @@ pre .javascript .function {
   line-height: 1;
   margin: -20px auto 15px;
   text-align: center;
+}
+.post {
+  background: rgba(255,255,255,0.6);
 }
 .post-sticky-flag {
   display: inline-block;
@@ -1969,12 +1972,6 @@ pre .javascript .function {
 }
 #qr p {
   text-align: center;
-}
-.post-block {
-  padding: 40px;
-  background: rgba(255,255,235,0.9);
-  box-shadow: $box-shadow-inner;
-  border-radius: $border-radius-inner;
 }
 .post-copyright {
   background: var(--card-bg-color);
