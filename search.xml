@@ -2,12 +2,13 @@
 <search>
   <entry>
     <title>费雪信息维度</title>
-    <url>/posts/2528082080/</url>
+    <url>/posts/fisher-information/</url>
     <content><![CDATA[<h1 id="费雪信息维度"><a href="#费雪信息维度" class="headerlink" title="费雪信息维度"></a>费雪信息维度</h1><blockquote>
 <p>In mathematical statistics, the <strong>Fisher information</strong> (sometimes simply called <strong>information</strong>) is a way of measuring the amount of information that an observable random variable <em>X</em> carries about an unknown parameter <em>θ</em> of a distribution that models <em>X</em>. Formally, it is the variance of the score, or the expected value of the observed information.</p>
 </blockquote>
 <span id="more"></span>
-<h2 id="费雪信息"><a href="#费雪信息" class="headerlink" title="费雪信息"></a>费雪信息</h2><p>观测随机变量序列 $X_1,X_2,\cdots,X_n$ 服从概率分布 $f(X;\theta)$ ，其中 $\theta$ 是目标参数，则似然函数（$\rm likelihood$）为</p>
+<h2 id="费雪信息"><a href="#费雪信息" class="headerlink" title="费雪信息"></a>费雪信息</h2><p><a href="">12</a></p>
+<p>观测随机变量序列 $X_1,X_2,\cdots,X_n$ 服从概率分布 $f(X;\theta)$ ，其中 $\theta$ 是目标参数，则似然函数（$\rm likelihood$）为</p>
 <script type="math/tex; mode=display">
 L(\theta;\boldsymbol X)=\prod_{i=1}^n f(X_i;\theta)</script><p>$\rm log\;likelihood$ 的一阶导数称为 $\rm Score\;function$，为</p>
 <script type="math/tex; mode=display">
