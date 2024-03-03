@@ -81,5 +81,8 @@ F=\frac{1}{N}\sum_{i=1}^Np(\boldsymbol X_i|\boldsymbol\theta)\nabla_{\boldsymbol
 <script type="math/tex; mode=display">
 F=-\mathbb E_{p(\boldsymbol X;\boldsymbol\theta)}\left[\operatorname H_{\log p(\boldsymbol X;\boldsymbol\theta)}\right]</script><p>证明如下：</p>
 ]]></content>
+      <tags>
+        <tag>有效维度</tag>
+      </tags>
   </entry>
 </search>

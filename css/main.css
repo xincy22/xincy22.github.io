@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #882217;
+  background: #bdf05c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1969,6 +1969,12 @@ pre .javascript .function {
 }
 #qr p {
   text-align: center;
+}
+.post-block {
+  padding: 40px;
+  background: rgba(255,255,235,0.9);
+  box-shadow: $box-shadow-inner;
+  border-radius: $border-radius-inner;
 }
 .post-copyright {
   background: var(--card-bg-color);
