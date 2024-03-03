@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":380,"display":"always","padding":18,"offset":12,"onmobile":false,"dimmer":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="业精于勤荒于嬉">
+<meta property="og:type" content="website">
+<meta property="og:title" content="雪域与良田">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="雪域与良田">
+<meta property="og:description" content="业精于勤荒于嬉">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="雪域与良田">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>雪域与良田</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">雪域与良田</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/03/%E8%B4%B9%E9%9B%AA%E4%BF%A1%E6%81%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/xincy22/MyImages@main/img/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="雪域与良田">
+      <meta itemprop="description" content="业精于勤荒于嬉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪域与良田">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/03/%E8%B4%B9%E9%9B%AA%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">费雪信息维度</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-03 17:24:09 / 修改时间：17:24:38" itemprop="dateCreated datePublished" datetime="2024-03-03T17:24:09+08:00">2024-03-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="费雪信息维度"><a href="#费雪信息维度" class="headerlink" title="费雪信息维度"></a>费雪信息维度</h1><p>[TOC]</p>
+<h2 id="费雪信息"><a href="#费雪信息" class="headerlink" title="费雪信息"></a>费雪信息</h2><blockquote>
+<p>In mathematical statistics, the <strong>Fisher information</strong> (sometimes simply called <strong>information</strong>) is a way of measuring the amount of information that an observable random variable <em>X</em> carries about an unknown parameter <em>θ</em> of a distribution that models <em>X</em>. Formally, it is the variance of the score, or the expected value of the observed information.</p>
+</blockquote>
+<p>观测随机变量序列 $X_1,X_2,\cdots,X_n$ 服从概率分布 $f(X;\theta)$ ，其中 $\theta$ 是目标参数，则似然函数（$\rm likelihood$）为</p>
+<p>$$<br>L(\theta;\boldsymbol X)&#x3D;\prod_{i&#x3D;1}^n f(X_i;\theta)<br>$$</p>
+<p>$\rm log;likelihood$ 的一阶导数称为 $\rm Score;function$，为</p>
+<p>$$<br>S(\theta;\boldsymbol X)&#x3D;\frac{\partial }{\partial \theta}\ln L(\theta;\boldsymbol X)&#x3D;\sum_{i&#x3D;1}^n\frac{\partial \ln f(X_i;\theta)}{\partial \theta}<br>$$</p>
+<p>费雪信息 $I(\theta)$ 定义为 $\rm Score;function$ 的平方的期望</p>
+<p>$$<br>I(\theta)&#x3D;\mathbb E[S^2 (\boldsymbol X;\theta)]\tag {I}<br>$$</p>
+<hr>
+<p>根据方差的公式</p>
+<p>$$<br>{\rm Var}[S(\theta;\boldsymbol X)]&#x3D;\mathbb E[S^2(\theta;\boldsymbol X)]-\mathbb E^2 [S(\theta;\boldsymbol X)]\tag{1-1}<br>$$</p>
+<p>同时有</p>
+<p>$$<br>\begin{aligned}<br>\mathbb E[S(\theta;\boldsymbol X)]&amp;&#x3D;\sum_{i&#x3D;1}^n \int f(X_i;\theta)\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\mathrm dX_i\<br>&amp;&#x3D;\sum_{i&#x3D;1}^n \int f(X_i;\theta)\cdot\frac{1}{f(X_i;\theta)}\frac{\partial f(X_i;\theta)}{\partial \theta}\mathrm dX_i\<br>&amp;&#x3D;\sum_{i&#x3D;1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\mathrm dX_i\<br>&amp;&#x3D;\sum_{i&#x3D;1}^n \frac{\partial}{\partial\theta}\int f(X_i;\theta)\mathrm dX_i\<br>&amp;&#x3D;\sum_{i&#x3D;1}^n \frac{\partial}{\partial\theta}1\<br>&amp;&#x3D;0<br>\end{aligned}<br>\tag{1-2}<br>$$</p>
+<p>结合 $(\text{1-1})$ 和 $(\text{1-2})$ 得到</p>
+<p>$$<br>I(\theta)&#x3D;{\rm Var}[S(\boldsymbol X;\theta)]\tag{II}<br>$$</p>
+<p>根据式 $(\text{II})$ 可以知道，费雪信息表示<strong>最大似然估计方程的方差</strong></p>
+<hr>
+<p>根据 $(\text{1-2})$ ，有</p>
+<p>$$<br>\sum_{i&#x3D;1}^n \int f(X_i;\theta)\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\mathrm dX_i&#x3D;0<br>$$</p>
+<p>对 $\theta$ 求导得到</p>
+<p>$$<br>\sum_{i&#x3D;1}^n \int \frac{\partial f(X_i;\theta)}{\partial \theta}\frac{\partial \ln f(X_i;\theta)}{\partial \theta}+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial \theta^2}\mathrm dX_i&#x3D;0\<br>\sum_{i&#x3D;1}^n\int f(X_i;\theta)\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)^2+f(X_i;\theta)\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\mathrm dX_i&#x3D;0\<br>\sum_{i&#x3D;1}^n {\rm Var}\left(\frac{\partial \ln f(X_i;\theta)}{\partial \theta}\right)+\sum_{i&#x3D;1}^n\mathbb E\left[\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] &#x3D;0\<br>{\rm Var}\left(\sum_{i&#x3D;1}^n\frac{\partial\ln f(X_i;\theta)}{\partial \theta}\right)+\mathbb E\left[\sum_{i&#x3D;1}^n\frac{\partial^2 \ln f(X_i;\theta)}{\partial\theta^2}\right] &#x3D;0\<br>{\rm Var}(S(\theta;\boldsymbol X))+\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial\theta^2}\right]&#x3D;0<br>$$</p>
+<p>则</p>
+<p>$$<br>{\rm Var}(S(\theta;\boldsymbol X)&#x3D;-\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial \theta^2}\right]<br>$$</p>
+<p>则</p>
+<p>$$<br>I(\theta)&#x3D;-\mathbb E\left[\frac{\partial^2 \ln L(\theta;\boldsymbol X)}{\partial \theta^2}\right]\tag{III}<br>$$</p>
+<p>根据式 $(\text{III})$ 可得费雪信息表示<strong>对数似然函数在参数真实值处的负二阶导数的期望</strong></p>
+<hr>
+<p>公式 $(\text{I}),(\text{II}),(\text{III})$ 为费雪信息的三种计算公式，总结如下</p>
+<p>$$<br>I(\theta)&#x3D;Var[S(\theta;\boldsymbol X)]&#x3D;\mathbb E[S^2(\theta;\boldsymbol X)]&#x3D;-\mathbb E\left[\frac{\partial^2\ln L(\theta;\boldsymbol X)}{\partial\theta^2}\right]&#x3D;-\mathbb E\left[\frac{\partial S(\theta;\boldsymbol X)}{\partial \theta}\right]<br>$$</p>
+<p>费雪信息给出了估计参数信息时准确性的最高精度，该最高精度由 $\rm Cramer;Rao$ 下界给出，表示为</p>
+<p>$$<br>{\rm Var}(\hat\theta)\ge\frac{1}{I(\theta)}<br>$$</p>
+<p>并可以推导出：<strong>任何无偏估计的方差至少大于 $\rm Fisher$ 信息的倒数</strong></p>
+<h2 id="费雪信息矩阵"><a href="#费雪信息矩阵" class="headerlink" title="费雪信息矩阵"></a>费雪信息矩阵</h2><p>假设目标参数为多个，$\boldsymbol\theta&#x3D;[\theta_1,\theta_2,\cdots,\theta_n]^T$，此时的费雪信息可以使用矩阵来表示。</p>
+<p>假定观测随机变量序列 $X_1,X_2,\cdots,X_n$ 服从概率分布 $f(X;\boldsymbol \theta)$ ，可以类似地给出似然函数的定义为</p>
+<p>$$<br>L(\boldsymbol\theta;\boldsymbol X)&#x3D;\prod_{i&#x3D;1}^nf(X_i;\boldsymbol \theta)<br>$$</p>
+<p>定义对数似然函数关于参数 $\boldsymbol \theta$ 的梯度为 $\rm Score;vector$ ，表示为</p>
+<p>$$<br>\vec S(\boldsymbol\theta;\boldsymbol X)&#x3D;\nabla_{\boldsymbol\theta}\ln L(\boldsymbol \theta;\boldsymbol X):&#x3D;\nabla_{\boldsymbol\theta}l(\boldsymbol\theta;\boldsymbol X)<br>$$</p>
+<p>类似地，费雪信息矩阵 $F$ 定义为 $\rm Score;vector$ 与自身外积的期望，表示为</p>
+<p>$$<br>\begin{aligned}<br>F(\boldsymbol\theta)&amp;&#x3D;\mathbb E\left[\vec S(\boldsymbol\theta;\boldsymbol X)\vec S(\boldsymbol\theta;\boldsymbol X)^T\right]\<br>&amp;&#x3D;\mathbb E\left[\nabla_{\boldsymbol\theta}l(\boldsymbol\theta;\boldsymbol X)\nabla_{\boldsymbol\theta}l(\boldsymbol\theta;\boldsymbol X)^T\right]<br>\end{aligned}<br>$$</p>
+<hr>
+<p>假定观测随机变量序列 $X_1,X_2,\cdots,X_n$ 服从联合概率分布 $p(X_1,X_2,\cdots,X_n;\theta)$ ，似然函数可以使用联合概率分布表示为</p>
+<p>$$<br>L(\boldsymbol\theta;\boldsymbol X)&#x3D;p(X_1,X_2,\cdots,X_n;\boldsymbol \theta)<br>$$</p>
+<p>由此给出 $\rm Score;vector$ 和 $\rm Fisher;information;matrix;(FIM)$ 的表达为</p>
+<p>$$<br>\vec S(\boldsymbol\theta;\boldsymbol X)&#x3D;\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X;\boldsymbol\theta)<br>$$</p>
+<p>$$<br>F(\theta)&#x3D;\mathbb E\left[\nabla_\theta\ln p(\boldsymbol X;\boldsymbol \theta)\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X;\boldsymbol \theta)^T\right]<br>$$</p>
+<hr>
+<p>类似地给出费雪信息矩阵的几种计算方式</p>
+<p>$$<br>F(\theta)&#x3D;\mathbb E\left[\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X;\boldsymbol \theta)\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X;\boldsymbol \theta)^T\right]<br>$$</p>
+<p>$$<br>F(\theta)&#x3D;-\mathbb E\left[\nabla_{\boldsymbol \theta\boldsymbol\theta}^2\ln p(\boldsymbol X;\boldsymbol \theta)\right]<br>$$</p>
+<p>$$<br>F(\theta)&#x3D;{\rm Var}[\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X;\boldsymbol \theta)]<br>$$</p>
+<p>其中，$\rm Var(\cdot)$ 表示关于向量的协方差矩阵，定义为</p>
+<p>$$<br>\mathrm{Var}(\boldsymbol{X})&#x3D;\begin{bmatrix}\mathrm{Var}(X_1)&amp;\mathrm{Cov}(X_1,X_2)&amp;\ldots&amp;\mathrm{Cov}(X_1,X_n)\\mathrm{Cov}(X_2,X_1)&amp;\mathrm{Var}(X_2)&amp;\ldots&amp;\mathrm{Cov}(X_2,X_n)\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\mathrm{Cov}(X_n,X_1)&amp;\mathrm{Cov}(X_n,X_2)&amp;\ldots&amp;\mathrm{Var}(X_n)\end{bmatrix}<br>$$</p>
+<p>同时给出其它两种计算方式的矩阵分量形式表示</p>
+<p>$$<br>[F(\theta)]_{i,j}&#x3D;\mathbb E\left[\left(\frac{\partial}{\partial \theta_i}\ln p(\boldsymbol X;\boldsymbol\theta)\right)\left(\frac{\partial}{\partial \theta_j}\ln p(\boldsymbol X;\boldsymbol \theta)\right)\right]<br>$$</p>
+<p>$$<br>[F(\theta)]_{i,j}&#x3D;-\mathbb E\left[\frac{\partial^2 }{\partial \theta_i\partial\theta_j}\ln p(\boldsymbol X;\boldsymbol\theta)\right]<br>$$</p>
+<p>同时给出离散形式的计算方式</p>
+<p>$$<br>F&#x3D;\frac{1}{N}\sum_{i&#x3D;1}^Np(\boldsymbol X_i|\boldsymbol\theta)\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X_i|\boldsymbol\theta)\nabla_{\boldsymbol\theta}\ln p(\boldsymbol X_i|\boldsymbol\theta)^T<br>$$</p>
+<h2 id="FIM-与-Hessian-的联系"><a href="#FIM-与-Hessian-的联系" class="headerlink" title="FIM 与 Hessian 的联系"></a>FIM 与 Hessian 的联系</h2><p>$\rm Fisher;information;matrix$ 等于模型的对数似然函数的 $\rm Hessian$ 矩阵的期望的负值，即</p>
+<p>$$<br>F&#x3D;-\mathbb E_{p(\boldsymbol X;\boldsymbol\theta)}\left[\operatorname H_{\log p(\boldsymbol X;\boldsymbol\theta)}\right]<br>$$</p>
+<p>证明如下：</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="雪域与良田"
+      src="https://cdn.jsdelivr.net/gh/xincy22/MyImages@main/img/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg">
+  <p class="site-author-name" itemprop="name">雪域与良田</p>
+  <div class="site-description" itemprop="description">业精于勤荒于嬉</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">雪域与良田</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
